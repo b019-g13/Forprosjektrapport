@@ -21,24 +21,24 @@ Bereket G adhanom \\
 \LARGE 
 Bjørnar Hagen \\
 \LARGE 
-Line Sharine Hagen
+Line Sharina Hagen
 }
 \maketitle
 
 \section*{Prosjektgruppen}
 
 \subsection*{Om Bereket}
-Gikk på videregåendeskole som IKT-servicemedarbeider og var lærling hos Rana kommune IT-avdeling. Etter jeg fikk fagbrev begynte jeg på Høgskolen i Østfold på dataingeniørstudiet Y-vei.
+Gikk på IKT-servicefag på  videregående og var deretter lærling hos IT-avdelingen til Rana kommune. Etter bestått fagbrev begynte jeg på Høgskolen i Østfold på dataingeniørstudiet Y-vei.
 
 Er interessert å jobbe med teknologier som HTML, CSS, PHP og JavaScript.
 
 \subsection*{Om Bjørnar}
-Tok fagbrev som IKT-servicemedarbeider hos Optimale Systemer AS i Larvik etter 2 år som lærling. Dette etter å ha fullført utdanning på IKT-linja hos Sandefjord videregående skole. Deretter gikk det videre til Høgskolen i Østfold. Startet da på Y-veien for dataingeniørstudiet.
+Tok fagbrev som IKT-servicemedarbeider hos Optimale Systemer AS i Larvik etter 2 år som lærling. Dette etter å ha fullført IKT-linja hos Sandefjord videregående skole. Deretter gikk det videre til Høgskolen i Østfold. Startet da på Y-veien for dataingeniørstudiet.
 
 Jobber nå som daglig leder hos Datahjelpen AS, hvor arbeidsoppgavene innebærer utvikling som full-stack og en del DevOps. Liker å jobbe med teknologier som HTML, CSS, JavaScript, Node, React, PHP og Linux.
 
 \subsection*{Om Line}
-Gikk IKT-servicefag på Sandefjord videregående skole. Var etter dette lærling hos Vestfold Fylkeskommune der jeg tok fagbrev og dermed ble utdannet som IKT-servicemedarbeider. Startet deretter på Y-veien på dataingeniørstudiet ved Høgskolen i Østfold. 
+Gikk IKT-servicefag på Sandefjord videregående skole. Var etter dette lærling hos Vestfold Fylkeskommune der jeg tok fagbrev og dermed ble utdannet IKT-servicemedarbeider. Startet deretter på Y-veien på dataingeniørstudiet ved Høgskolen i Østfold. 
 
 Jobber nå som front-end utvikler hos Datahjelpen AS og liker best å jobbe med teknologier som HTML, CSS og JavaScript.
 
@@ -63,7 +63,7 @@ I tillegg skal nettstedet inneholde informasjon angående deres prosess, live ch
 
 \subsection*{Verktøy}
 
-Oppdragsgiver har gitt oss helt frie tøyler. Prosjektgruppen har derfor selv valgt å bruke følgende verktøy:
+Oppdragsgiver har ingen krav til verken utforming, bruk av verktøy eller grafisk uttrykk. Vi har derfor fått ganske frie tøyler. Prosjektgruppen har selv valgt ut de forskjellige verktøyene vi mener passer bedriften.
 
 \begin{itemize}
 \item HTML
@@ -79,12 +79,14 @@ Oppdragsgiver har gitt oss helt frie tøyler. Prosjektgruppen har derfor selv va
 \item Git
 \item Linux
 \item Nginx
-\item MariaDB
+\item MySQL
 \item buddy.works
 \item letsencrypt
 \item Photoshop
 \item Amazon Web Services (AWS) s3 
 \end{itemize}
+
+---
 
 \begin{itemize}
 \item Alle: VCS: Git
@@ -97,8 +99,12 @@ Oppdragsgiver har gitt oss helt frie tøyler. Prosjektgruppen har derfor selv va
 \item DevOps: Lagring: AWS s3
 \end{itemize}
 
-\textbf{Laravel} er et PHP web-rammeverk som er basert på Symfony. Det følger Model-view-controller (MVC) designmønsteret. Dette skal vi bruke til å utvikle et REST-API og vil fungere som back-end til vårt nettsted.
-\textbf{React JS} er et JavaScript bibliotek for å bygge brukergrensesnitt.
+\textit{Laravel} er et \textit{PHP} web-rammeverk som er basert på \textit{Symfony}. Det følger \textit{Model-view-controller} (MVC) designmønsteret. Dette skal vi bruke til å utvikle et \textit{REST-API} og vil fungere som \textit{back-end} til vårt nettsted.
+\textit{React JS} er et \textit{JavaScript} bibliotek for å bygge brukergrensesnitt. Dette har vi tenkt å bruke som \textit{front-end} for vår løsning sammen med \textit{HTML} og \textit{CSS}.
+For versjonskontroll har vi valgt å bruke \textit{Git}.
+\textit{Repositories} lagres hos \textit{Github}, som vi også bruker for prosjektstyring. For  \textit{CI/CD} skal vi bruke \textit{Buddy.works}
+
+Når nettstedet begynner å bli ferdig skal vi laste det opp på en server som kjører \textit{LEMP}-stacken (Linux, Nginx, MySQL og PHP). Vi tenker å levere nettstedet over \textit{HTTP2}-protokollen, noe som gjør at vi trenger et \textit{SSL/TLS}-sertifikat for å servere nettsider over \textit{HTTPS}. Dette skaffer vi gjennom \textit{Let's Encrypt}. For å ta backup av databasen skal vi bruke \textit{Ottomatik.io}, og for backup av filer bruker vi \textit{AWS} (Amazon Web Services) sin \textit{S3} tjeneste, som vi også brukes for lagring av media-filer.
 
 ---
 
@@ -134,11 +140,29 @@ auctor lorem non justo.
 
 Maecenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec, susci- pit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum pellentesque felis eu massa.
 
-Analyse av gammelt nettsted
-Mockup
-Database og modeller
-Nettsted
-Brukerveiledning
+Følgende dokumenter må leveres:
+\begin{itemize}
+\item Prosjekt og gruppekontrakt
+\item Gruppenettsted
+\item Forprosjektrapport
+\item Første versjon av hoveddokument
+\item Andre versjon av hoveddokument
+\item Hoveddokument med vedlegg
+\item Prosjektplakat
+\item Presentasjon
+\end{itemize}
+
+I tillegg vil disse konkrete resultatene bli opprettet i løpet av dette prosjektet:
+
+\begin{itemize}
+\item Analyse av gammelt nettsted
+\item Mockups av nytt nettsted
+\item Database og modeller
+\item Nettsted
+\item Brukerveiledninger
+\end{itemize}
+
+
 
 \subsection*{Metode}
 Maecenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec, susci- pit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum pellentesque felis eu massa.
@@ -192,5 +216,11 @@ Det er også viktig å redegjøre for hvordan man tenker seg rollene i selve gru
 En annen klassisk utfordring i et prosjektarbeid er hvordan man takler unntak. Hva gjør man hvis et gruppemedlem blir sykt i en kritisk periode, eller ikke leverer som avtalt? Tenker man seg muligheten av re-planlegging i visse situasjoner?
 
 Til slutt kan det være greit å kommentere kort hvordan man tenker seg forholdet mellom veilederen og gruppa. 
+
+--
+
+Fortløpende kontakt og tilbakemelding fra oppdrgsgiver. E-post, telefon, videosamtale. Ikke like stort behov for å ha møter fysisk, da man får like stort utbytte av en videosamtale. Ønsker skriftlige tilbakemeldinger på design og funksjonalitet. 
+
+Gruppen har besluttet å ha en fast prosjektleder, da det er nødvendig å ha en fast person som følger opp prosessen og som har ansvar for dialogen med både veileder og oppdragsgiver.
 
 \end{document}
