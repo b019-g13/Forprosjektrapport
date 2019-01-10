@@ -63,14 +63,16 @@ I tillegg skal nettstedet inneholde informasjon angående deres prosess, live ch
 
 \subsection*{Verktøy}
 
-Oppdragsgiver har ingen krav til verken utforming, bruk av verktøy eller grafisk uttrykk. Vi har derfor fått ganske frie tøyler. Prosjektgruppen har selv valgt ut de forskjellige verktøyene vi mener passer bedriften.
+Oppdragsgiver har ikke satt noen krav til verken utforming, bruk av verktøy eller grafisk uttrykk. Vi har derfor fått ganske frie tøyler. Prosjektgruppen har følgelig selv valgt ut de forskjellige verktøyene vi mener passer bedriften.
 
 \textit{Laravel} er et \textit{PHP} web-rammeverk som er basert på \textit{Symfony}. Det følger \textit{Model-view-controller} (MVC) designmønsteret. Dette skal vi bruke til å utvikle et \textit{REST-API} og vil fungere som \textit{back-end} til vårt nettsted.
-\textit{React JS} er et \textit{JavaScript} bibliotek for å bygge brukergrensesnitt. Dette har vi tenkt å bruke som \textit{front-end} for vår løsning sammen med \textit{HTML} og \textit{CSS}. Før vi begynner å lage front-end har vi tenkt til å lage \textit{wireframes} og \textit{mockups} med \textit{Photoshop}.
+\textit{React JS} er et \textit{JavaScript} bibliotek for å bygge brukergrensesnitt. Dette har vi tenkt å bruke som \textit{front-end} for vår løsning sammen med \textit{HTML} og \textit{CSS}. Før vi begynner å lage front-end har vi tenkt til å lage \textit{mockups} med \textit{Figma}.
 For versjonskontroll har vi valgt å bruke \textit{Git}.
 \textit{Repositories} lagres hos \textit{Github}, som vi også bruker for prosjektstyring. For  \textit{CI/CD} skal vi bruke \textit{Buddy.works}
 
 Når nettstedet begynner å bli ferdig skal vi laste det opp på en server som kjører \textit{LEMP}-stacken (Linux, Nginx, MySQL og PHP). Vi tenker å levere nettstedet over \textit{HTTP2}-protokollen, noe som gjør at vi trenger et \textit{SSL/TLS}-sertifikat for å servere nettsider over \textit{HTTPS}. Dette skaffer vi gjennom \textit{Let's Encrypt}. For å ta backup av databasen skal vi bruke \textit{Ottomatik.io}, og for backup av filer bruker vi \textit{AWS} (Amazon Web Services) sin \textit{S3} tjeneste, som vi også brukes for lagring av media-filer.
+
+Etter nettstedet er lansert skal vi måle trafikk og bruk av nettsidene med \textit{Google Analytics}.
 
 ---
 
@@ -93,18 +95,14 @@ Formålet uttrykkes gjerne som ett hovedmål, og et par-tre delmål som utdyper 
 \subsection*{Formål}
 
 \begin{compactitem}
-\item [{\bf Hovedmål}] Forbedre deres profil på nett slik at potensielle kunder får en bedre forståelse av deres produkter og tjenester og tar kontakt gjennom eget nettsted. På et overordnet plan vil dette bidra til å øke omsetningen til oppdragsgiver.
+\item [{\bf Hovedmål}] Forbedre Sirkus Media sin profil på nett, slik at potensielle kunder får en bedre forståelse av deres produkter og tjenester og dermed tar kontakt gjennom deres nettsted. På et overordnet plan vil dette bidra til å øke omsetningen til oppdragsgiver.
 \begin{compactitem}
-\item [{\bf  Delmål 1} ] Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi
-auctor lorem non justo.
-\item [{\bf  Delmål 2} ] BLA Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi
-auctor lorem non justo.
+\item [{\bf  Delmål 1} ] Generere mer trafikk, som fører til at flere kunder tar kontakt med bedriften. 
+\item [{\bf  Delmål 2} ] Måle trafikken på nettstedet, slik at man ser hva som fungerer og deretter kan tilpasse informasjonen til brukerne som besøker siden.
 \end{compactitem}
 \end{compactitem}
 
 \subsection*{Leveranser}
-
-Maecenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec, susci- pit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum pellentesque felis eu massa.
 
 Følgende dokumenter må leveres:
 \begin{itemize}
@@ -122,17 +120,24 @@ I tillegg vil disse konkrete resultatene bli opprettet i løpet av dette prosjek
 
 \begin{itemize}
 \item Analyse av gammelt nettsted
+\item Analyse av konkurrenter
 \item Mockups av nytt nettsted
 \item Database og modeller
 \item Nettsted
+\item Sitemap
 \item Brukerveiledninger
 \end{itemize}
 
-
-
 \subsection*{Metode}
-Maecenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec, susci- pit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum pellentesque felis eu massa.
+Hovedmålet er å forbedre Sirkus Media sin nettprofil. Dette løser vi med å analysere dagens nettside og kartlegger hva som er bra og dårlig. Deretter går vi videre til å analysere konkurrentene sine nettsider og ser hvordan deres løsninger ser ut. 
 
+Det første delmålet er å generere mer trafikk til nettsiden. Da må vi å lage et attraktiv nettsted som følger beste praksis for god søkemotoroptimalisering, semantikk og universell utforming. 
+
+For å oppnå delmålet om måling av trafikk på nettstedet må vi benytte oss av verktøy som Google Analytics. 
+
+Mockups oppnår vi ved å hente inspirasjon fra lignende nettsider og deretter lager et forslag på design til nettstedet.
+
+Database og modeller løser vi ved å først tegne og deretter forbedre databasen ved hjelp av penn og papir. 
 
 \section*{Prosjektplan}
 
